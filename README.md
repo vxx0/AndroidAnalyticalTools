@@ -40,5 +40,6 @@ I will use com.google.vol as an example for detailed explanation. <br>
    and a `uptime` file recording the last run time of the app in this isolated environment. <br>
 
 # 
+__The output logs used for analysis are received using logcat__. <br>
 If anyone has any suggestions for improvement, please leave me a message. <br>
 Thank you very much, and I wish you a happy day every day. <br>
