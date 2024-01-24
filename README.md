@@ -11,8 +11,8 @@ I will use com.google.vol as an example for detailed explanation. <br>
 1. Place the following files in the /data/local/tmp directory: <br>
   `agent.5` <br>
   `agent.conf` <br>
-  `task.conf` (For example, https://github.com/vxx0/AndroidAnalyticalTools/blob/main/task.conf)<br>
-  `${package_name}.task.conf` (For example, https://github.com/vxx0/AndroidAnalyticalTools/blob/main/com.google.vol.task.conf)<br>
+  `task.conf` (For example, [task.conf](https://github.com/vxx0/AndroidAnalyticalTools/blob/main/task.conf)) <br>
+  `${package_name}.task.conf` (For example, [com.google.vol.task.conf](https://github.com/vxx0/AndroidAnalyticalTools/blob/main/com.google.vol.task.conf))<br>
 
 2. Make sure your phone has an sdcard. <br>
 3. Create an isolated directory at /sdcard/Android/data/storage, <br>
