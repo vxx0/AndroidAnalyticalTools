@@ -39,6 +39,38 @@ I will use com.google.vol as an example for detailed explanation. <br>
    recording the first run time of the app under analysis in this isolated environment, <br>
    and a `uptime` file recording the last run time of the app in this isolated environment. <br>
 
+9. Directories to be created by users and files to be placed. <br>
+    - /sdcard/Android/data/storage
+      - 1
+        - app
+          - com.google.vol
+            - base.apk
+        - data
+        - sdcard
+        - ext
+          - conf.json
+      - 2
+        - app
+          - com.google.vol
+            - base.apk
+        - data
+        - sdcard
+        - ext
+          - conf.json
+    - /data/local/tmp
+      - agent.5
+      - agent.conf
+      - task.conf
+      - com.google.vol.task.conf
+9. To switch the isolation environment. <br>
+   first stop and disable the app to ensure it is not running. <br>
+   Modify the a.conf to execute the new isolation directory, and finally, enable and run the app. <br>
+   For example, (The following commands need to be adapted by you to ensure they are correct.) <br>
+   adb shell am force-stop com.google.vol <br>
+   adb shell pm disable-user --user 0 com.google.vol <br>
+   modify com.google.vol.task.conf <br>
+   adb shell pm enable com.google.vol <br>
+   adb shell am start -n com.google.vol/your.activity.name <br>
 # 
 __The output logs used for analysis are received using logcat__. <br>
 If anyone has any suggestions for improvement, please leave me a message. <br>
