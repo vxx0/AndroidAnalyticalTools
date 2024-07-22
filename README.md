@@ -18,9 +18,10 @@ I will use com.google.vol as an example for detailed explanation. <br>
 
 3. Directories to be created by users and files to be placed. <br>
     - /sdcard/Android/data/com.google.vol/storage
-      - base.apk 
       - 1
         - app
+          - com.google.vol
+            - base.apk 
         - data
         - sdcard
         - ext
