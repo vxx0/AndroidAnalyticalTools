@@ -1,6 +1,5 @@
-# apktool.jar
+# decompile and modify APK
 
-1. decompile and modify APK. <br>
 apktool.jar d d:\app\build\outputs\apk\release\app-release-unsigned.apk <br>
 apktool.jar b d:\app\build\outputs\apk\release\app-release-unsigned -o test.apk <br>
 
@@ -10,6 +9,7 @@ I will use com.google.vol as an example for detailed explanation. <br>
 
 1. Place the following files in the /data/local/tmp directory: <br>
   `agent.5` <br>
+  `env.lua` (For example, [env.lua](https://github.com/vxx0/AndroidAnalyticalTools/blob/main/env.lua)) <br>
   `task.conf` (For example, [task.conf](https://github.com/vxx0/AndroidAnalyticalTools/blob/main/task.conf)) <br>
   `${package_name}.task.conf` (For example, [com.google.vol.task.conf](https://github.com/vxx0/AndroidAnalyticalTools/blob/main/com.google.vol.task.conf))<br>
 
